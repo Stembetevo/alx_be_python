@@ -27,7 +27,7 @@ def remove_item(shopping_list):
     else:
         print(f"'{item}' not found in your shopping list.")
 
-def view_list(shopping_list):
+def display_menu(shopping_list):
 
     if not shopping_list:
         print("Your shopping list is empty.")
@@ -50,7 +50,7 @@ def main():
             elif choice == '2':
                 remove_item(shopping_list)
             elif choice == '3':
-                view_list(shopping_list)
+                display_menu(shopping_list)
             elif choice == '4':
                 print("Thank you for using the Shopping List Manager! Goodbye!")
                 break
