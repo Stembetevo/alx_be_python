@@ -4,14 +4,9 @@ class BankAccount:
         self.account_balance = initial_balance
     
     def deposit(self, amount):
-        """Add the specified amount to the account balance."""
         self.account_balance += amount
     
     def withdraw(self, amount):
-        """
-        Deduct the amount from account balance if funds are sufficient.
-        Returns True if withdrawal is successful, False otherwise.
-        """
         if amount <= self.account_balance:
             self.account_balance -= amount
             return True
